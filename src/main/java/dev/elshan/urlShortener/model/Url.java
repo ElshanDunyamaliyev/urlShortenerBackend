@@ -1,9 +1,15 @@
 package dev.elshan.urlShortener.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "url")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Url {
 
     @Id
